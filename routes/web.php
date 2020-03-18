@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Postscontroller@index');
+// ①どのURL(メソッドも含む)の時に、②どのコントローラーの、③どのメソッドを使用するかを決めます。
+// ①URL/にGETメソッドでアクセスされた場合、②PostsControllerの③indexメソッドを使用する例です。
